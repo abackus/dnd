@@ -1,0 +1,383 @@
+\documentclass{report}
+\usepackage{amsthm}
+\usepackage{csquotes}
+\usepackage{amsfonts}
+\usepackage{scrextend}
+\theoremstyle{definition}
+\newtheorem{enc}{Encounter}[chapter]
+\newtheorem{npc}{NPC}[chapter]
+\begin{document}
+\title{A Fool's Playthings}
+\author{Aidan Backus}
+\date{2016}
+\maketitle
+%\frontmatter
+%\setcounter{tocdepth}{3}
+%\mainmatter
+\begin{displayquote}
+\textit{Tonight we are playing with a fool's playthings; he who toys with politics plays a dangerous game.}
+\newline
+--Ashelia Haberon, Captain of the Royal Watch
+\newline
+5 November, 84 PP
+\end{displayquote}
+\textit{A Fool's Playthings} is an adventure for four to six level 1 players.  It is a more politically-oriented adventure, and thus requires more roleplaying experience, patience, and knowledge of the game than most adventures starting at level 1, such as \textit{Keep on the Shadowfell}, would be.  However, there are still monsters, dungeon-crawls, and other elements of traditional adventures.  The PCs are ordinary citizens caught in an extraordinary situation: they find themselves trapped in the politics, tactics, and violence of the revolt of their kingdom against its oppressors, the notorious Ascalon.  While the text assumes that the players will follow the plot, discover the truth behind the House of the Raven and liberate the holdings of Ascalon, the plot is open-ended; the DM should be prepared for a game that goes off the rails, and be ready to transition into a new adventure.
+
+Nuthalia, the setting of much of the adventure, is a tolerant and multiracial state; however, characters of certain races, specifically those in expansion packs, should have a backstory explaining what brought them to the country.  In addition, characters of low social standing, such as commoners, thieves, and low-ranked clergy, should have a reason for being present at the King's palace on the night of 19 November.  They may simply be present at the riot in Asbury Town and tag along with wealthier PCs, or they may be rogues planning to nab some of the royal treasury while the guards are drunk, or any number of other purposes.
+
+While Nuthalia is not in the same state France was before its Revolution, it's anything but stable.  Many aristocrats have fallen from grace, losing their titles, wealth, or both; serfs and peasants are often barely making enough to survive.  Merchants may be struggling to peddle their goods, and knights and clergymen often double as lawyers or other intellectual jobholders to get by; some even turn to manual labor.  In the ashes of the collapsing feudal society, a class of adventurers, rogues, travelers, and scoundrels has begun to grow.
+
+Adventurers may or may not know each other before the adventure; there are plenty of opportunities for them to bump into each other in Asbury toward the start of the campaign.
+
+\tableofcontents
+\chapter{Asbury, City on the Hill}
+\section{Location description}
+\begin{labeling}{Inns and Taverns}
+\item [History] Asbury is a small city built on the hill where the last two warring monarchs, Vayn and Dysle, were slain at the end of the Eleven Kings' War. The palace was built first on the only road through; it took several years of peace before others were willing to set up shop around the violence-plagued region, and even decades later, industries other than basic infrastructure are only starting to be built.
+\item [Demography] Asbury has maybe only 150 permanent residents, and not even 1,000 peasantry living in its direct vicinity.  The vast majority of these residents are either aristocrats, or knights, clergy, and peasants in service to the royalty.  However, over 300 people pass through the city on any given day, whether to meet with the nobility or because of its central location in Nuthalia. While most residents are human or halfling, with nearby dwarven, elven, and dragonborn settlements, just about every civilized race can be seen wandering the streets on busy days.
+\item [Geography] The Gran Palace lies on a cliff known as the Regal Descent on the east end of the city; over 100' high, it was the means by which Vayn and Dysle were executed, and dying like them is considered an 'honorable' way of admitting defeat.  The largest waterway in the country, the River Cosumnes, cascades off this cliff and serves as a natural northern boundary to Asbury. A canal that bypasses the tor Asbury was built on altogether serves as the main means of transportation and the border of the south and west sides of the city.  Because of paranoia of invasion, there are bridges built to cross the Cosumnes to the cliff, but the only way into the city itself is by boat, and a band of halflings lead by the arrogant Yune controls most of the city's ports.
+\item [Government] King Thorde is not afraid to use absolutism to keep control in Asbury, the only city where he truly has power.  He openly distrusts the wealthy classes, and with good reason; trust has gotten many kings and pretenders, even those of the relatively respected House of the Raven, stuck with a dagger in their back!  The twenty or so castle guards double as police forces and defense against monsters, and neither crime nor rebellion goes unpunished in the City on the Hill.
+\item [Inns and Taverns] Despite its small size, there are three pubs in Asbury, all of them widely successful.  The Dancing Mallard Alehouse is located on the main road, known for its cheap prices and alcoholic but amiable owner, the dwarf Orsk.  The Bluemoon is a somewhat more expensive inn run out of the home of a fallen noble, a halfling named Audrey.  Finally, Quinn's Rest is on the road to the castle, and with its high prices, supply of fine wines, and pretentious owners, is clearly meant for the wealthy only.
+\item [Religion] Few temples exist to the gods here, because of the government's secular nature.  However, one of the first structures erected was a marble temple to Erathis and Kord, the two gods the House of the Raven attributes to its success.  Statues inside glorify the god of civilization as the creator of Nuthalia, and the war god crushing an invasion from the south.  The temple is maintained by a group of civilian clerics lead by a dwarf named Jonn; when worshippers are in need, he's willing to conduct Gentle Repose, Remove Affliction, or Hand of Fate rituals, with a +7 bonus to Heal and Religion checks in doing so.
+\end{labeling}
+\section{The adventure begins}
+When the PCs arrive in Asbury, they may or may not know each other.  They may meet in Asbury, or may take part in the events there without noticing each other, and only meet in the palace. Regardless, you should read the following introduction to the campaign before they begin to explore the city:
+\begin{displayquote}The nation of Nuthalia was once very successful. It was even in the process of doing away with the feudal system, which King Garland the Great realized would cause a revolt as the wealth that flowed into country because of its successful industries was kept out of the hands of the serfs. However, this all collapsed when a plague swept through the palace at Henshaw Pass, killing him and most of his court, including his son and only heir, Mateus II. 
+
+No longer restrained by Garland's peace-advocating politics, greedy nobles fought for the crown, many of them secretly backed by the expansionist nation of the south, Ascalon. Thus, for five years, the country had as many as eleven rulers claiming to be king, each more terrible than the last: Zande the Shortlived, Golbeze the Darkclad, Euno the Power-void, Kafka the Mad, Sephirot the Fallen, Idia the Manipulated, Kuha the Fabulous, Yuyavon the Unholy, Vormav the Templar, Vayn the Dynast-king, and Dysle the Orphaned. Finally, a bright young man exposed the truth about the mechanisations of Ascalon's capital, Spanos, uniting the knights of Nuthalia who were looking for a way out of this war. Nael, the Raven, gained enough favor that he was able to lead a huge army against the nobility, and built a small capitol on the site of the Battle of Asbury, where he personally killed Vayn and Dysle and declared himself King. 
+
+The Ascaloners revealed their true intentions once their shills were all dead. With Nuthalia crippled, they invaded and waged total war, destroying crops, sacking cities, massacring civilians, and releasing monsters across the border. Wondering if Nael, who was unable to stop the assault, was truly any better than the power-hungry politicans he had fought against, peasants across the nation rose up in the flames of revolution. Asbury fell to them not a year after its leader rose to power. Ascalon sent an ultimatum to Nael: surrender and they will forcibly put down the revolt they brought about -- or refuse, and watch as his country is engulfed by chaos, and finally subjugated by Ascalon. In Asbury, the Empire of Ascalon was declared, and states indebted to Spanos, including Nuthalia, were incorporated into Ascalon.
+
+Nuthalia is still unstable. Assassinations and backstabbing are the norm, and the absurdly high war reparations (to say nothing of the restrictions on worship, speech, arms-bearing, and other rights) that still haven't been completely paid back to Spanos aren't helping. King Thorde, the great-great-grandson of Nael, rose to power a decade ago. Remaining King for ten years is a record that hasn't been broken since Garland's death, and many say he plans to stay in power until he has gotten revenge on Ascalon and returned his nation to greatness by any means necessary. Tonight he is holding a feast to celebrate his tenth year in power -- the first time he has allowed so many nobles and knights in his lonely castle at one time.
+\end{displayquote}
+Particularly wealthy PCs, especially nobility, should also receive the following letter:
+\begin{displayquote}
+\textit{Lords, knights, and merchants are cordially invited to the Gran Palace of Asbury on the night of the fifth of November, 84 Years Post-Plague, to celebrate the tenth anniversary of the coronation of King Thorde. Your presence is expected and appreciated. May we put past differences aside and make merry!}
+\newline
+--Thorde I d'Raven, King of Nuthalia, Lord of Asbury, and Protector of the Realm
+\end{displayquote}
+PCs should have time to RP and explore the city before night falls and the party begins.
+
+At dusk, PCs going to the party they hear screaming, arguing, and other sounds of a crowd gathering in the road leading to the Gran Palace. As they approach, they notice a large mob:
+\begin{displayquote}
+The din rises as you approach the protesters, who don't seem to be of one political faction or even of the same race.  \textit{How can you have a fete right now? Where's our bread?}  You even hear one mock the King himself:  \textit{Death to the House of the Crow!}  They stone the guards, nobles, and merchants standing in the city square.   Finally, the chaos turns to violence when a guard draws a spear and kills the nearest rebel.  They pounce on him, and the merchants and nobles flee, chased by several of the rabble.  Seeing that you are no peasant, an archer lets loose and arrows sail between your heads. Roll for initiative!
+\end{displayquote}
+\begin{enc}[Challenge 1, 260 XP]
+
+\leavevmode
+\begin{itemize}
+\item 3 human guards (friendly) (MM 347)
+\item 2 human courtiers (unarmed, friendly) (MM 348)
+\item 1 dwarf commoner (dead) (MM 345)
+\item 4 human commoners (MM 345)
+\item 2 dwarf commoners (MM 345)
+\item 2 halfling scouts (MM 349)
+\end{itemize}
+
+The road is 30' wide, with three buildings on each side. The buildings are 10' tall, and one on each side has a ladder that can be scaled in one turn. Each building has a 5' alley between it, and any enemy who flees 60' through an alley has escaped and counts as defeated for the purposes of XP. The enemies spawn in a line perpendicular to the road, with a guard behind the dead commoner in the middle of the pack of enemies. The party are 30' back from the enemies, and the remaining two guards and two courtiers are 10' behind them.
+
+The guards are trying to stop the commoners from inciting a larger riot that could threaten the stability of Asbury; though the rebellion would definitely fail, there would be bloodshed.  The commoners will try to surround the lone guard and kill him, while the other two guards run to his aid. However, if the commoners are outnumbered they will throw down their weapons and try to escape. The two scouts have combat experience and will try to climb the laddered buildings while firing on the party with their \textit{multiattack}. If all of the commoners are dead, the scouts will jump behind the building and flee. The guards fight to the death, while the courtiers will immediately attempt to flee down the road (rather than into an alley).
+
+The humans carry 10 cp each; they drop their clubs while fleeing.  The scouts have 5 sp each.
+\end{enc}
+
+If the party aids the guards, the guards thank the PCs, and invite them to the party as distinguished guests, even if they have already been invited.  PCs not present at the scene of the riot can still attend the party. However, if the party flees with the courtiers, they do not recieve XP, but can still attend the feast if they have a reason to do so; moreover, they \textit{should} have a reason to do so, as the fete is the setting of the plot's inciting event.
+
+\chapter{Gran Palace of Asbury}
+\section{Location description}
+\section{The King's festival}
+Read to the PCs:
+\begin{displayquote}
+A stiff frosty breeze greets you as you arrive in the early evening at the Gran Palace for King Thorde's tenth coronation anniversary celebration.  Most vegetation has turned to brown in anticipation of the quickly coming winter months, but patches of overgrown weeds have filled up cracks in the castle walls, betwixt shoddy attempts to cover up damage sustained during infighting. The keep itself has been decorated festively with bright red, yellow and green banners and ribbons that match the House of the Raven's colors and contrast sharply with the drab surroundings. Indeed, the hideous color scheme and kelter-skelter shape of the building leave it looking less like a royal palace and more like a bloodstained toad.
+
+At the toe of the amphibian is the entry to the great hall, guarded by three knights wearing rusted and unmaintained armor. In front of them stands Wodehouse, the king's jaded tiefling porter, who looks utterly unfazed and unamused by the night's festivites; he appears to want nothing more than to waste away on some southern island, away from the pretenses of the landed nobility.	
+
+You all receive a similar monotone greeting:
+
+\textit{Ave, sirs, madames, et al. By royal decree I must ask that you submit any arms you are bearing to me; they will be returned, possibly unbroken, ere the sun rises tomorrow morning. Advisors to His Highness suspect that he will not be the only individual who claims to be "high", as youth often say, tonight, and it would quite mar the night if, for example, that dwarf approaching us from the main road was to fall into a stupor and crack your skull with the overly large hammer he carries on him.}
+
+He holds out his hands impatiently.
+
+\end{displayquote}
+\begin{npc}[Wodehouse]
+Wodehouse is an unarmed tiefling courtier (MM 348) who serves as Thorde's porter and secretary. Wodehouse appears to be the ideal aide to the king because he projects a persona of absolute disinterest in affairs at court, and seems to only be in his line of work for the money. In reality, a DC 20 History check will reveal that Wodehouse is a commoner who was taught how to read by a noble named Bertran who has long been critical of Thorde's isolationism, and as such is indebted to Bertran. However, Wodehouse will not intervene in the affairs at court unless the players pressure him into it, or Bertran is harmed.
+\end{npc}
+\begin{npc}[Bertran Rasser]
+Bertran Rasser is a human (Str 9, Dex 10, Con 11, Int 12, Wis 12, Cha 14; proficient in Persuasion (+4) and Intimidation (+4)) and a distant relative of the king, and the lord of Whitehead Manor, a modest keep near the border with Ascalon. An aged, foul-tempered man, Betran is old enough to have lost uncles to the headsman's axe in the Imperial invasion after the Eleven Kings' War, though he wasn't alive during the conflict. Nevertheless, his family has been hell-bent on revenge ever since, which has brought them nothing but strife: his lands were sacked and burned when he attempted to revolt against Spanos fifteen years ago, and he has never forgotten it. The Rassers wish the king no ill but have long been one of his biggest political enemies, as his policies ensure peacetime and prevent Bertran from pursing further vengeance.
+
+Bertran is present at the feast, but will not have any impact on the storyline here unless a player actively seeks him out (DC 10 Investigation or Insight).
+\end{npc}
+A Stealth or Sleight of Hand check of 15 can allow the player to hide their weapons from the guards.
+\begin{displayquote}
+The inside of Gran Palace couldn't possibly have a sharper contrast from its drab exterior. Stone fireplaces in every corner of every hall keep the entire castle lit, and the banquet hall is covered in extensive tables covered in sweets, meats, meads, goods, and flowers from all across the nation. One can faintly hear the clanking of machinery in the kitchens and smell the burning of the coal – all imported from the Free City of Gyro, a distant city-state industrialized far beyond even Insuia; it is any technophile's heaven.
+
+Though the clock has yet to even strike eight, it's clear that more than a few guests have had a bit to drink. Perhaps amateur comics, perhaps seasoned womanizers, and certainly chronic alcoholics, two men engage in a promiscuous dance behind the chair of one of the few women in attendance: the king's nephew, a young lass named Therese known across the realm for her elegance and beauty.
+
+Oddly enough, Thorde himself is nowhere to be seen. Wodehouse and Therese seem unworried, with Wodehouse continuing to repeat his dreary speech to incoming guests, and Therese chatting up an awkward aristocrat who finds himself stuttering and blushing quite luminously. He fumbles a bit with his food, and eventually absentmindedly picks up a whole steak, steps up, and bumps into and drops it into an amused Therese's lap.
+\end{displayquote}
+\begin{npc}[Lady Therese d'Raven]
+Therese is a human (Str 9, Dex 12, Con 8, Int 15, Wis 12, Cha 15; proficient in Deception (+4) with advantage against single or unfaithful males) and the 19-year-old daughter of Thorde's younger brother, Thomme. Once, most would dismiss Therese as a simple, pretty-faced princess fated to a political marriage, but in reality she is one of the House of the Raven's greatest assets. Whenever subterfuge is suspected, she will use the power of seduction to get rebellious nobles to spill their secrets. Just before the foolish lord would bed Therese, she would reveal her true intentions and summon her uncle's most trusted knights to arrest and summarily execute her would-be lover. After four revolts were suppressed in this matter, rumors began to spread: any man who Therese would undress for doesn't have long to live. Now most high lords know better, but every now and then a baron or knight will slip up and find himself and find himself in the Lady Raven's fated embrace. Therese can feel love and passion, but she is quite good at surpressing her true emotions. Indeed, she will adjust her manner of speaking to whatever appears to be most suitable. If a PC is speaking to Therese, a roll of Insight versus her Deception will reveal if she is attempting to manipulate the PC.
+\end{npc}
+Allow the players time to RP, and if they still haven't met up, bring them together. How much time you give them before the storyline continues largely depends on the time constraints of your session and how much time your players have invested in fleshing out their backstories, as well as the extent to which they are willing to bond with each other and the NPCs present in the game world. The Gran Palace of Asbury should be completable in one session as long as the players don't find themselves thrown in jail.
+
+Once they've run out of things to do, and want to get the plot moving again, Thorde limps into the room, blood dripping from his chest. A dagger falls from his chest. He screams, \textit{Darius Aidara!} as he collapses onto the floor before the party. Pandemonium breaks out; Therese appears to have fainted in horror.
+
+Guards are forced to placate the chaos in the room as the party is left with Thorde's corpse. The guards are led by an NPC known as Ashelia Haberon. Moreover, any characters with weapons present \textit{must} roll Stealth, Sleight of Hand, or Persuasion (DC 15) to keep them from being caught red-handed. A failed roll counts as a "failure" for the skill challenge below, and five failures in the party provoke the battle below.
+
+\begin{npc}[Ashelia Haberon, Captain of the Royal Watch]
+Ashe is a half-elf gladiator (MM 346) (Str 19, Dex 16, Con 15, Int 11, Wis 12, Cha 17; proficiency in Athletics (+10), Intimidation (+5), and Perception (+3)) and the Captain of the Royal Watch. Though none can doubt her loyalty to the King, she has earned infamy for her use of torture to secure knowledge for him, and her refusal to show emotion even in the most dire of situations.  A DC 15 History check reveals that she was a master duelist in her youth, and when she grew too old for the sport, elected to serve Thorde, who she had mentored in the arts of war in his youth. Ashe values stability above all, and while she will normally fight to capture her enemies so she can "interrogate" them at spearpoint later, she is not above spilling blood if it will ensure that the peace is preserved.
+\end{npc}
+
+\begin{enc}[Challenge 1, 200 XP]
+If the players seek to investigate the body of Thorde, they are faced with a skill challenge. Here are some actions they may wish to take:
+\begin{itemize}
+\item A Perception or Medicine check to look over the King's body. DC 10 reveals his body is feverish.
+\item DC 15 Perception (counts as two successes) also reveals that a small gear symbol is engraved on the hilt of the dagger, and a DC 20 Medicine (counts as two successes) reveals that his reddened eyes and skin, and the mucus dripping from his nose, show that he was afflicted it a severe flu before his death, which would have killed him if the assassination didn't.
+\item If a PC notices the gear, a DC 15 History check will reveal that the gear is a symbol of the Free City of Gyro, who keeps their independence despite being surrounded by Ascalon and its Empire by selling weapons to Spanos, funds from which go to designing still bigger and better weapons which they could crush entire battalions from the Empire.
+\item A DC 15 Stealth or Sleight of Hand check can be used to search the King's pockets, but the only thing inside them is ... a turnip.
+\item A DC 15 Insight or Investigation check allows them to ask around and find that the King showed no signs of illness before that night.
+\item Aristocrats should already know this, and should be privately told this at the start of the skill challenge; however, commoners and middle-class PCs can make a DC 15 Insight or Streetwise check to reveal that Darius Aidara is the name of a fiercely nationalist lord who gained notoriety for constantly pushing the King to revolt against the Empire.
+\item A DC 20 Perception (counts as a third success), DC 20 Investigation (counts as a second success) or DC 20 Insight (counts as a second success) check reveals that Darius was present at the party, but is now nowhere to be found.
+\item Parties who learned about Bertran from previous History and Investigation checks (it's too late to learn about him now) will find that he's sitting a table away from them. Players may attempt to interrogate him, but he will deny involvement in the murder. A DC 15 Insight check confirms that he is telling the truth, but this does not count as a success.
+\end{itemize}
+
+If players have \textbf{5 successes before 3 failures}, word gets out that they have been, somewhat successfully, attempting to find the guilty party, and Ashe seeks out their aid:
+
+\begin{displayquote}
+\textit{You appear to be a very competent group of travelers, or at least a very curious one.  Surely you, of all parties, could determine who is to blame, and aid us in bringing him to justice before he can succeed in his mechanizations, whatever they may be.  You'll be well-paid if you succeed.  The question right now, however, is: are you willing?}
+\end{displayquote}
+
+If they agree, she also gives them all the information that they didn't find out in the above skill challenge.
+
+If the players do not investigate the body, or have \textbf{3 successes and 3 failures}, Ashe climbs onto a table and announces to the visitors:
+
+\begin{displayquote}
+\textit{As you know, His Highness, the much beloved King Thorde, was murdered tonight for reasons unknown by persons unknown.  All are strongly encouraged to hand over any information they have on this assassination to me privately.  They will be rewarded, as will anyone who successfully seeks out the assassin.}
+
+Ashelia's voice echoes throughout the halls of the Gran Palace. Though her words are awkwardly phrased, hinting at her illiteracy, something about her voice soothes the crowd. Maybe it's her relaxed, unafraid tone; maybe it's the fact that most of the nobles present are terrified of her. Whatever the cause, the din dies down immediately. After a pause, the Captain continues to speak.
+
+\textit{However, right now, I must ask that all visitor submit to questioning.  I have asked Wodehouse to lock all exits of the castle, and there will be no escape. Guards have rounded up anyone who has attempted to leave the castle during this cowardly attack on the House.  Tonight we are playing with a fool's playthings; he who toys with politics plays a dangerous game.  But have no fear:  you have nothing to lose if you have nothing to hide.}
+\end{displayquote}
+
+The PCs are free to RP, talk to guests, and the like, and when their activities die down, Ashe calls their group. She wishes to know:
+
+\begin{displayquote}
+\textit{I will not search you for weapons, because I suspect it would only lead us down on a false path; if the assassin was smart, he would've only brought the knife with which he did the deed.  Rather, I wish to know: who are you all?  What chain of events ... or, perhaps, cover stories ... have brought you here to the fete tonight?}
+\end{displayquote}
+
+After they individually answer (with truth or lies) she does not change her facial expression, but tersely says:
+
+\begin{displayquote}
+\textit{Very well.  Now, did any of you harm, or ever mean to harm, King Thorde or another member of the royal family, and with what motives?}
+\end{displayquote}
+
+When they insist that they don't, she continues:
+
+\begin{displayquote}
+\textit{Very well.  Now, remember, you had your chance to tell the truth; if you are, may the gods bless you.  If not, and we learn the truth ... suffice to say I shall personally ensure you feel a pain like you could never imagine. And I always make good on my promises.}
+\end{displayquote}
+
+However, if players have \textbf{5 failures before 3 successes}, they are captured by the guards, blamed for the assassination, and apprehended by the palace guards in the midst of the chaos. If the players submit to questioning, they are confronted by Ashe, who holds the weakest-looking member of the party at spearpoint and explains:
+
+\begin{displayquote}
+\textit{While I may personally suspect you, there is no real evidence to suggest that you killed His Highness.  As such, I must ask you, on pain of death, to clear your names.  You will take a soldier with you, and you will find who assassinated the King.  You will leave tonight, before the assassin or assassins can find out who are guilty of this crime flee Asbury with the morning caravan.}
+\end{displayquote}
+
+However, if the party tries to fight back, the nobility flee from the chaotic dinner hall, and the guards attack the PCs.
+\end{enc}
+
+\begin{enc}[Challenge 7, 3300 XP]
+\leavevmode
+\begin{itemize}
+\item 5 human guards (MM 347)
+\item 2 dragonborn veterans (MM 350)
+\item Ashelia Haberon
+\end{itemize}
+
+This battle takes place inside the feast hall, a 60' x 55' x 20' room whose doors are all locked shut after the bystanders leave. There are four 5' x 40' x 5' tables which are covered in food and dishes. As such, it takes a DC 15 Acrobatics check to run over the tables without falling prone. Moreover, if one fails the Acrobatics check, the dishes break, wounding the PC running over the table for 1d4 damage if his feet and legs are unarmored. One can also swing a chair from the table as a weapon with a DC 15 Athletics check, which does 1d6 bludgeoning damage. Hiding adjacent to a table provides +2 AC against arrows fired from the other side of the table. 
+
+Though only the guards and veterans are present at first, Ashe appears through a door on the third round.  The enemies first fight to capture the party, though if one of them is killed, Ashe is wounded, or the body of Thorde is damaged, they will fight to the death. Since the PCs should not be adequately equipped to win this encounter, it falls to the DM to avoid this, or the campaign will end here. If the party is captured or surrender, they are \textbf{imprisoned by the Royal Watch} (see below).
+\end{enc}
+
+The following scene plays out \textbf{as soon as the party is done talking to Ashe}.
+
+\begin{displayquote}
+The Captain of the Guard is cut off by a shout: \textit{A man's falling off the Regal!}  Pandemonium breaks out in the building again, until a guard hurries into the room and says, \textit{He's feather falling.  He must be fleeing the scene of the assassination!  After him!}  Knights, bounty-hunters, and other warrior-types rise from their seats and run from the castle to the Regal Descent, and look down, unsure what to do next.
+\end{displayquote}
+
+The PCs are able to stay in the palace until after the initial incident is over; other than a few mercenaries who carry climber's kits, nobody has been able to climb down the cliffs, and little changes.  When they do come outside, they can see soldiers climbing into the boats they used to cross the River Cosumnes:
+
+\begin{displayquote}The Cosumnes is utterly indifferent to the violence it bore witness to tonight.  It continues cascading down the cliff, forming one-half of the Gran Palace's moat: both beautiful and terrifying, for the waterfall has taken far too many lives as it is.  Feather-falling spells are beyond the skill level of the court mages, and the knights looking for an assassin to capture are forced to board boats and paddle upstream, to circumnavigate Asbury and take the canal south of its borders that bypass the Regal Descent.  In the farmlands below, a tiny figure boards his horse and begins riding across one of the bridges, hurrying south from the scene of the crime. Guards milling about shout, \textit{A bounty on his head! Rewarded if he's dead or alive! Gold and knighthood!}
+\end{displayquote}
+
+Again, give the players time to RP. Whether they have already decided to pursue the murderer (perhaps because Ashe has promised a reward, or offered them no choice) or are only just now considering the possibility, you should make it clear that this is \textit{the} adventure hook of the campaign: take it or leave it and end up in a completely different campaign than what you prepared.
+
+Once the players have resolved to seek justice for the King, a lean, pale, outlandishly dressed figure sneaks up behind them and taps one of them on the back. When they turn, he breaks out in rhyme:
+
+\begin{displayquote}
+\textit{Halt, woeful band of comrades\\
+Lest ye lose your chance to fight\\
+Alongside the student of the triads\\
+Of nature, elements, light}
+
+\textit{Justice for the great King\\
+Shall not long be out of our grasp\\
+Bards! Soon ye shall sing\\
+Of us, until your chords rasp}
+
+\textit{Protect ye, heal ye, scout for ye\\
+Magics ye may need, magics ye shall have\\
+It ever tempts to deny me\\
+But with my spells you'll be long glad
+}
+\end{displayquote}
+
+Ashe walks up to the party, almost scowls, and says:
+
+\begin{displayquote}
+\textit{If you mean to seek out the murderer, you will take this court mage with you. Jan's songs are good for nothing} -- at this Jan playfully shoots a ray of light at the irritated guard -- \textit{but his magic is far beyond yours, and will prove quite helpful. But be warned: he does not take treason any lighter than I do.}
+\end{displayquote}
+
+The party may try to convince the mage to leave, but if so, he will simply follow them and turn up at their camp the next night, singing the same chant. They have no choice but to deal with their new ally, at least for the time being.
+
+\begin{npc}[Jan Hue]
+Jan is a human mage (MM 347) (\textit{animal messenger} instead of \textit{detect magic}) and one of the nation's eminent scholars of magic. He is ever dressed in finery, and his flashy garb, imported from beyond Ascalon, betrays his true motivation: a love of wealth. Jan has studied applied magic in both Spanos and Gyro, but Thorde offered him the most coin, so he came to Asbury to serve the House of the Raven. He is questionably useful to the court in Asbury, due to his penchant to speak in poetry beyond most councilors' comprehension.
+
+Jan will actively work against any party member he suspects has gone over to the Empire. (see \textbf{traitors to the House}, below).
+\end{npc}
+
+The party may wish to stay the night in Asbury, and then travel northeast in search of the murderer the following morning, but it is more likely that they'll want to leave right away. For that, they'll need to either travel all the way around the city -- about an hour in travel time -- or climb down the cliff of the Regal Descent into the Consumnes riverbed. There is a slippery pathway down, as well as ladders, both of which should be easy to climb down unless the party tries to run, in which case a DC 10 Acrobatics check will be necessary to avoid slipping and taking 1d6 falling damage before regaining one's grasp. The party may try other ways of climbing if they don't feel that the ladders are safe, which may succeed or fail on the DM's discretion.
+
+Jan knows \textit{fly} and can cast it on the whole party (at the expense of all his 3rd level magic slots and a 4th level slot for each party member after the first two) but won't use it unless prompted to do so or if somebody falls. If somebody falls and Jan does not react for whatever reason, he will take 1d6 per 10' fallen after the first 20' and will have to swim out of the river (which may be easy or difficult, depending on the PC's race and skills). Since the Regal Descent is 100' high, you should obviously avoid this outcome, unless there's one pesky player who you'd like to kill off and kick out of your group. Your fellow GMs will not judge you too harshly.
+
+Once the party has reached the ground, they will most likely want to continue northeast in search of the murderer. It's time to continue from \textbf{in search of an assassin}, below.
+
+\section{Imprisoned by the Royal Watch}
+If the party is defeated by the Royal Watch after failing the skill challenge earlier in this chapter, they are outnumbered and surrounded by the Watch and taken to the prison.
+
+Most \textit{Dungeons and Dragons} players will react to imprisonment by attempting to break out, but this will not succeed unless they come up with a sufficiently creative means of escape -- and if this happens, the campaign is effectively derailed, though it can be brought back on track if the PCs decide to clear their names by pursuing the true murderer. At this point the campaign can be continued from \textbf{Livingstone Castle}, albeit without Jan.
+
+However, if the players fail to escape from imprisonment, they will be put on trial for their crimes:
+
+\begin{displayquote}
+Your insides ache, crying out to you for nourishment. For days now -- or was it weeks? When you're rotting away in a cell, it's all the same -- all the gaolers have served you is thin gruel, tasting of paste. So that you might be more alert when you're told your fate, the gaoler, an ancient, obese, morbidly humorous man always singing about rats, offered you a slice of meat pie some hours ago, but its taste was horrific, reminiscent of flesh, and you vomited all your innards out after eating it. Better men than you might've wondered from what or whom the chef got the meat...
+
+You feel a sigh of relief as you're dragged before the great hall in chains and see that your comrades' limbs are still intact. With all the fancy trappings of the feast torn down, the hall looks as drab and miserable as the rest of this gods-foresaken, infighting-torn castle. Whatever contempt you may feel for your surroundings is reflected back at you tenfold: the entire court, from the lowliest servant to the King's own family, loathes you and would not mourn if a troll smashed through the gates and bludgeoned your pale faces into bloody bits. Princess Therese won't dignify you by even looking in your direction, and one has to wonder if she's praying for a harsh sentence.
+
+The judge, a wiry, short-tempered man, walks to the front of the room ever slowly. Without a gavel, he simply raises his voice, and says calmly but authoritatively, \textit{I will have order in this court. The Royal Watch has accused these prisoners of the regicide of King Melantes I d'Raven. Before we hear Lady Haberon's testimony and assign the prisoners an appropriate sentence, I invite the accused to speak for themselves.}
+\end{displayquote}
+
+The PCs are now able to speak, each in turn. When they are done, the crowd begins murmuring again, and someone even throws a rock. Ashe then speaks:
+
+\begin{displayquote}
+\textit{I will have order. ... Very good. When the King was dying, he limped across the hall to the accused, as if he knew that they were behind the dagger through his heart. No sooner did he fall, they began picking apart his body, surely to confirm that he was truly dead. Moreover, I ordered that they submit to questioning for such suspicious activity -- as all other parties present had been ordered -- only for them to strike at my guards. I am pleased to report that there were no mortal casualties ... well, except for His Highness, whose anguished, dying expression I shall never forget. Nevertheless, I suggest that we imprison the accused for no more than three months. If a more likely suspect is found by then, they may be acquitted; but as far as I am concerned, the murderers stand before you, and in three moons' time, I will be only too happy to hurl their bodies off of the Regal Descent --}
+
+Clearly the man who spoke to you before was a judge only in title; in this trial, the Captain of the Watch has named herself judge, jury, and executioner. Throughout her monologue her piercing gaze has fallen upon each of you, yet she spoke as if none of you were in the room.
+
+At the prospect of public execution, the crowd goes wild, and all semblance of order breaks down as groundlings jeer at you. Ashe draws her spear, tumbles down from the podium, and points it at the noisest of the malcontents and the room again falls silent. 
+\end{displayquote}
+
+The PCs may plead for their lives here, and may even attempt a DC 15 Persuasion or DC 20 Deceit check to convince the court to spare them, which will have an effect later. They may attempt to argue with the judge, but after some RP, Ashe will again interject.
+
+\begin{displayquote}
+\textit{I had not completed my sentence,} Ashe says, and she finally addresses you. \textit{I would gladly end your miserable lives, but that would not be the King's justice -- for whatever flaws one might have seen in the late King, he always prided himself in allowing his enemies to clear their names. Of course, none ever could, and so they all flew. Will you clear your name, or is it the Descent for you?}
+\end{displayquote}
+
+After the PCs consent to Ashe's plan, the trial concludes (after much booing from the crowd, and many dirty looks from the royal family) and the party is introduced to Jan (see \textbf{the King's festival}, above), but with a caveat: if they failed or didn't the above Persuasion/Deceit check, Jan immediately suspects the party for the purposes of \textbf{traitors to the House}, and attempts to roll against his Insight to feign innocence will always fail. However, he can still be bribed. 
+
+\section{Traitors to the House}
+During Jan's travels with the PCs, he will pay close attention to their actions to determine if they plan to turn on the House of the Raven. A roll of Deception versus Jan's Insight (+1) suffices to convince him of their innocence, but this roll must be made \textit{every time a PC plans to take an action that is treasonous in nature}, and the player must have some convincing dialogue to persuade Jan of his innocence. This roll will always fail if the party was put on trial and failed to persuade the court of their innocence when they are \textbf{imprisoned by the Watch}.
+
+If Jan suspects a party member of having betrayed the mission, he will send a message by pigeon (via \textit{animal messenger}) to Ashe warning her that the investigation has been compromised, as well as warning his most trusted party member secretly. He does so in the dead of night, when he is convinced that the traitor is asleep. He will also enlist his trusted PC's help to sabotage any treasonous actions taken by the suspected turncount. Ashe and her allies will not aid the party unless they can do something to prove their loyalty, or roll Persuasion or Deceit against her Insight (+1).
+
+Because of Jan's greed, he can be easily bribed. 1000 gp is enough to turn him to the players' cause, after which point he will continue to play the part of a loyal Raven supporter but will secretly support whichever faction the party serves. His 1000 gp pricetag can be lowered under the following circumstances:
+
+\begin{itemize}
+\item Each point above 15 Persuasion will reduce the price by 20gp.
+\item For each party member that speaks to him in poetry, the price decreases by 50gp.
+\item The death of Ashe, Thorde, and any other NPCs Jan answers to will reduce his price by half.
+\end{itemize}
+
+However, if Jan is not bribed and multiple party members plot to openly rebel against the House of the Raven, kill Jan to prevent word from getting out, or prevent his messenger pigeons from reaching Ashe, Jan will flee and then ambush the party the next night with a party of local soldiers in an attempt to assassinate the party.
+
+\begin{enc}[Challenge 6-7, 2300-2900 XP]
+\leavevmode
+\begin{itemize}
+\item Jan Hue
+\item 0-4 spies (MM 349)
+\item 0-8 guards (MM 347)
+\end{itemize}
+
+This encounter should be customized to fit the circumstances it occurs in. The race of the spies and guards is whichever race is predominant in the location the ambush takes place. Moreover, the number of enemies can be adjusted to ensure an appropriate Challenge rating for the party. If the average party member is below level 6, Jan by himself (Challenge 6) will prove a tough fight; if the party is level 6-7, a moderate number of enemies (Challenge 6.5) is correct; if the party is above level 7, all 13 enemies should arrive for the ambush (Challenge 7). If the party is near an important NPC, such as Ashe or Darius, they may personally come to the battle, though this is likely to sharply increase the Challenge Rating (Ashe and Jan alone make for a Challenge 8 encounter).
+
+By now, Jan is likely as familiar with the party's fighting style as the GM is, and will immediately send the guards and spies after the most threatening PC in an attempt to surround him and incapacitate him with \textit{sneak attack}. Jan himself will fend off the weaker party members with \textit{cone of cold}, \textit{ice storm}, and \textit{fireball}. He saves a 3rd-level spell slot to flee with \textit{fly} if his health is low.
+\end{enc}
+
+If the party surrenders to Jan, he will spare them, but will only do so once, and he makes this clear: unless the party can reaffirm their loyalty to the House of the Raven, their days are numbered. If they did not attempt to convince Ashe of their innocence at the trial, Jan will be much less willing to spare the party.
+
+\chapter{Riverbed of the Consumnes}
+\section{Location description}
+\section{In search of an assassin}
+notes and stuff
+
+they see a man featherfalling down the Regal Descent,
+\chapter{The Pyramid, Estate of House Aidara}
+\section{Location description}
+\section{Espionage}
+\chapter{Mountains of the Southern Marches}
+\section{Location description}
+\section{Fleeing Darius's army}
+\section{The kobolds' lair}
+\chapter{Ashbay, the Last Colony}
+\section{Location description}
+\section{Preparing the island's defense}
+\section{Negotiations with Whitehead Manor}
+\section{Battle of Ashbay}
+\section{Victory for Spanos}
+\section{Victory for Asbury}
+\chapter{Aguos-on-the-Bay}
+\section{Location description}
+\section{The Sack of Aguos}
+\chapter{Free City of Gyro}
+\section{Location description}
+\section{Revolution of the Black Cloak}
+\section{A state in ruins}
+\section{Peace restored}
+\section{To steal an airship fleet}
+\section{Arms, armies, and armadas}
+\chapter{Henshaw Pass}
+\section{Location description}
+\section{Siege of McAuliffe Pass}
+\section{Battle over the Marches}
+\section{Justice for the Raven}
+\section{Salvation for the Watch}
+\chapter{Old Capitol Henshaw}
+\section{Location description}
+\section{The succession crisis}
+idk what to do from here
+
+\chapter{Appendix}
+\section{Rules of mass combat}
+\section{Rules of airship-to-airship combat}
+\section{Index of NPCs}
+\begin{labeling}{Therese d'Raven, Princess}
+\item [Ashelia Haberon] Captain of the Royal Watch.
+
+Gran Palace of Asbury: The King's festival
+\item [Bertran Rasser] Lord of Whitehouse Manor.
+
+Gran Palace of Asbury: The King's festival
+\item [Jan Hue] Scholar of magic.
+
+Gran Palace of Asbury: The King's festival
+\item [Therese d'Raven] Princess; the Lady Raven.
+
+Gran Palace of Asbury: The King's festival
+\item [Wodehouse] The king's porter.
+
+Gran Palace of Asbury: The King's festival
+\end{labeling}
+\end{document}
+
+and track him to the estate of House Aidara.  Upon arrival, learn from rumors that Thorde is alive, pretending to be dead to discourage second assassination attempt, and that an unhired body double was killed.  Aidara declares them enemies of the Empire and orders execution and they flee; this implies Insuia's role in the assassination, leading to war.  Men and monsters serving Aidara and Ascalon chase party to [name] caverns, are lost in a dungeon crawl which takes the party to the border chased by adult black dragon and its kobold worshippers. Resulting chaos causes first battle of war (plus arrival of Imperio-Aidaran troops that Nuthalians can't tell if allies or not) to end with unclear results. (should there be branching storyline in which party joins the Empire?) party taken in by troops, sent to meet with Thorde about news about Aidara's betrayal. Thorde decides to also play dirty, and sends party secretly to secure aid (by force if needed) from Gyro. They find Gyro in a civil war between ultraroyalists (though King Gyro X himself remains neutral) and the Black Cloak, an alliance of republicanists, populists, and cultists, facilitated by arrival of mercenary troupe hired by King but unwilling to use mass violence and reactionary politics to put down revolt; here they can use diplomacy to stabilize the country or violence to send it deeper into chaos; uses situation to take airship fleet (if stolen, Gyro joins with Empire; if earned through diplomacy, Gyro turns on Empire). Use this (+Gyran army if allied and stabilized) to intervene at Siege and then Battle of Birin Valley, where Nuthalia faces capitulation. Thorde assassinated for real by Aidara behind the lines, who admits to faking an assassination of Thorde to instigate a war against the Empire for fear that the real Thorde would be too passive to do the same thing, and in the turmoil of war, assassinating the real Thorde and manipulating his way to the throne. Duels Ashe, but flees and leaves her to die (PCs can save her or pursue Aidara)
+	
